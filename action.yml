@@ -69,7 +69,6 @@ runs:
     - name: "Install Rust Problem Matcher"
       run: |
         echo "::add-matcher::${{ github.action_path }}/rust.json"
-        echo "::add-matcher::${{ github.action_path }}/rustfmt.json"
       shell: bash
 
     - name: Install rustup, if needed
